@@ -7,7 +7,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain; charset=utf-8')
             self.end_headers()
-            self.wfile.write(b"Hello from DevOps Assessment!")
+            self.wfile.write(b"Hello from DevOps Assessment")
         else:
             self.send_response(404)
             self.end_headers()
